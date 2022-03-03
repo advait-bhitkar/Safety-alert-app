@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboading_navigation"
+    app:startDestination="@id/viewPagerFragment">
+
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.pribha.womenssafetyandsecurityapp.onboarding.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_mobileNoScreen3"
+            app:destination="@id/mobileNoScreen3" />
+    </fragment>
+    <fragment
+        android:id="@+id/mobileNoScreen3"
+        android:name="com.pribha.womenssafetyandsecurityapp.onboarding.login.mobilenoscreen.MobileNoScreen"
+        android:label="MobileNoScreen" >
+        <action
+            android:id="@+id/action_mobileNoScreen3_to_otpScreenFragment"
+            app:destination="@id/otpScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpScreenFragment"
+        android:name="com.pribha.womenssafetyandsecurityapp.onboarding.login.otpscreen.OtpScreenFragment"
+        android:label="otp_screen_fragment"
+        tools:layout="@layout/otp_screen_fragment" >
+        <action
+            android:id="@+id/action_otpScreenFragment_to_mobileNoScreen3"
+            app:destination="@id/mobileNoScreen3" />
+        <action
+            android:id="@+id/action_otpScreenFragment_to_enterNameScreen"
+            app:destination="@id/enterNameScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterNameScreen"
+        android:name="com.pribha.womenssafetyandsecurityapp.onboarding.login.enternamescreen.EnterNameScreen"
+        android:label="enter_name_screen_fragment"
+        tools:layout="@layout/enter_name_screen_fragment" />
+</navigation>

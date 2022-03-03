@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/categoryInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/border_chemistry_dictionary"
+        android:clickable="true"
+        android:layout_margin="@dimen/spacing_16"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        android:paddingStart="@dimen/spacing_16"
+        android:paddingTop="@dimen/spacing_8"
+        android:paddingEnd="@dimen/spacing_16"
+        android:paddingBottom="@dimen/spacing_8"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/custom_text_001"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Low Battery Alert" />
+
+            <TextView
+                style="@style/custom_text_005"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Low Battery alert to your  contacts"
+
+                android:textSize="13.5sp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="@dimen/spacing_middle"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/categeory_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+
+            android:clickable="false"
+            android:focusable="false"
+            android:theme="@style/SwitchCompatTheme" />
+
+        <View
+            android:layout_width="@dimen/spacing_middle"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/categoryddcsdInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/border_chemistry_dictionary"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginStart="@dimen/spacing_16"
+        android:layout_marginEnd="@dimen/spacing_16"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        android:paddingStart="@dimen/spacing_16"
+        android:paddingTop="@dimen/spacing_8"
+        android:paddingEnd="@dimen/spacing_16"
+        android:paddingBottom="@dimen/spacing_8"
+
+        android:layout_marginTop="@dimen/spacing_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryInfoLayout">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/custom_text_001"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scream Signal" />
+
+            <TextView
+                style="@style/custom_text_005"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cick to start scream signal"
+
+                android:textSize="13.5sp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="@dimen/spacing_middle"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/dvdvvee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+
+            android:clickable="false"
+            android:focusable="false"
+            android:theme="@style/SwitchCompatTheme" />
+
+        <View
+            android:layout_width="@dimen/spacing_middle"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/layout"
+        android:layout_marginBottom="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_baseline_help_outline_24"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/black" />
+
+
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Help and Feedback"
+            android:textAppearance="@style/custom_text_001"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/colorOnSecondary"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout"
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_baseline_share_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_share_24"
+            app:tint="@color/black" />
+
+
+        <View
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_main"/>
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Share App"
+            android:textAppearance="@style/custom_text_001"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_main"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
