@@ -4,6 +4,14 @@ The Safety Alert App is a mobile application designed and developed with the pri
 This app empowers users to quickly send distress signals, share their location, and receive emergency assistance when needed. 
 Whether you're in a dangerous situation or simply want to ensure your safety during everyday activities, this app has you covered.
 
+
+![1](https://github.com/advait-bhitkar/Safety-alert-app/assets/25331865/ec4ed114-d483-4b63-bc01-1ba90ba2ddc3)
+
+![2](https://github.com/advait-bhitkar/Safety-alert-app/assets/25331865/dcb74f48-1dee-4a71-bf97-cad01ac8c039)
+
+![3](https://github.com/advait-bhitkar/Safety-alert-app/assets/25331865/d2dcbd99-a0fd-402e-b3a8-ab575cc55fba)
+
+
 ## Features
 **Distress Signal:** Easily send distress signals with a single tap to alert your emergency contacts and authorities.
 
